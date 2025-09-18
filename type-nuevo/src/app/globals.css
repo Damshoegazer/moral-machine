@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(70, 70, 70);
+  font-family: sans-serif;
+  list-style: none;
+}
+body {
+  background-color: black;
+}
+
+@layer utilities {
+  .custom-scrollbar::-webkit-scrollbar {
+    @apply w-1; 
+    @apply h-[0.5] ;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-transparent; 
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-orange-500 rounded-full; 
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-button {
+    @apply hidden;
+  }
+}
+
+/* div, li, h1, h2, h3, a {
+  background-color: transparent;
+} */
