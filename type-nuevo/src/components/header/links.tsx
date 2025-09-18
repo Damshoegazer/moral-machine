@@ -7,4 +7,8 @@ export const links = [
         title: "Ai",
         href: "/ai"
     },
+    {
+        title: "Page2",
+        href: "/page2"
+    },
 ]
